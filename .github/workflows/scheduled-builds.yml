@@ -14,4 +14,4 @@ jobs:
     steps:
       - name: cURL request
         # Hit the webhook endpoint to rebuild  from the "main" branch
-        run: curl -X POST -d {} https://cron-job-node.vercel.app/
+        run: curl -X POST -d {} https://sending-notification-teletgram.vercel.app/
