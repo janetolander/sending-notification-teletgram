@@ -87,8 +87,9 @@ app.post('/',(req, res) => {
                     disable_web_page_preview:false,
                     disable_notification:false
                 }
-                notify.send(message,fetchOption, apiOption);
-                res.send(notify);
+                notify.send(message,fetchOption, apiOption).then(response => {
+                    res.send(response);
+                });
             })
         });
     }).on("error", (err) => {
