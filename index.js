@@ -9,7 +9,7 @@ app = express();
 
 var price = 0;
 const BOT_TOKEN = "2047059161:AAHHjFvEhVnBd_nJBBMJNuLdGwvxv1SBRcM";
-const CHAT_ID = "155390373"
+const CHAT_ID = "-1001426677742"
 
 var priceClss = new Price();
 
