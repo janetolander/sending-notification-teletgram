@@ -37,7 +37,7 @@ cron.schedule(' */2 * * * *', async function () {
             console.log(bnbPrice);
             priceClss.getPrice().then(bal =>{
             
-                egaPrice = (Number(bal.bnbBalance) / Number(bal.egaBalance)) * (Number(bnbPrice)) ;
+                egaPrice = (Number(bal.bnbBalance) / Number(bal.egaBalance)) * (Number(bnbPrice))/10 ;
                 console.log('running a task every minute : ', egaPrice);
 
                 let notify = new Telegram({token:BOT_TOKEN, chatId:CHAT_ID})
